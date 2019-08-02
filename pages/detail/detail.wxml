@@ -1,0 +1,50 @@
+<view>
+  <myTitle></myTitle>
+  <!-- 视频界面 -->
+  <view class="videoBox">
+    <video src="{{videoInfo.videoSrc}}" controls></video>
+  </view>
+  <view>
+    <!-- 视频标题 -->
+    <view class="videoTitle">{{videoInfo.videoTitle}}</view>
+    <!-- 视频详情 -->
+    <view class="videoInfo">
+      {{videoInfo.author}}
+      <text>{{videoInfo.playCount}}观看</text>
+      <text>{{videoInfo.commentCount}}弹幕</text>
+      <text>{{videoInfo.date}}</text>
+    </view>
+  </view>
+  <!-- 评论列表 -->
+  <view class="commentBar">
+    <view class="commentTitle">评论（{{commentTotalCount}}）</view>
+    <view class="commentList clearFix" wx:for="{{commentLists}}" wx:key="{{index}}">
+    <!-- 头像 -->
+      <view class="commentImg ">
+        <image src="{{item.userIconSrc}}"></image>
+      </view>
+      <view class="commentUser">
+        <view class="userName">
+          <text>{{item.username}}</text>
+          <text>{{videoInfo.date}}</text>
+        </view>
+        <view class="commentInfos">
+          <text>{{item.commentInfo}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 推荐视频 -->
+  <view class="otherBar">
+    <view class="otherList" wx:for="{{otherList}}" wx:key="{{index}}">
+      <view class=""><image src="{{item.imgSrc}}"></image></view>
+      <view class="otherInfo">
+        <view class="otherTitle">{{item.title}}</view>
+        <view class="otherWatch">
+          <text >{{item.playMsg}}次观看</text>
+          <text>{{item.commentCount}}弹幕</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

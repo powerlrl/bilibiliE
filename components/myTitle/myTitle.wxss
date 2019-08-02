@@ -1,0 +1,35 @@
+.headerBar{
+  width: 100%;
+  display: flex;
+  flex: 7;
+  padding: 0 30rpx;
+  align-content: center;
+}
+.headerLogo{
+  display: flex;
+  flex: 3;
+  align-content: center;
+}
+.headerSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerUser{
+  margin-left: 10rpx;
+  display: flex;
+  padding: 0 10rpx;
+}
+.headerDown{
+  font-size: 28rpx;
+  display: flex;
+  color: #fff;
+  flex: 1.5;
+  margin-right: 50rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8rpx;
+  background: #e08a90;
+  box-sizing: border-box;
+}

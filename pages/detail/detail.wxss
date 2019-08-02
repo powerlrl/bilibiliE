@@ -1,0 +1,101 @@
+.videoBox{
+  padding: 20rpx 0;
+  width: 100%;
+}
+.videoBox video{
+  width: 100%;
+}
+.videoTitle{
+  color: #555;
+}
+.videoInfo{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.videoInfo text{
+  color: #555;
+  font-size: 24rpx;
+  padding: 10rpx;
+}
+/* 评论 */
+.commentBar{
+  padding: 20rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  border-left: 1px solid #e8e8e8;
+}
+.commentList{
+  margin-top: 40rpx;
+  border-bottom: 1px solid #e8e8e8;
+}
+.commentTitle{
+  font-size: 26rpx;
+  color: #555;
+}
+.commentUser{
+  width: 600rpx;
+  float: left;
+  color: #555;
+}
+.commentImg{
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+}
+.commentImg image{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+.userName{
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.commentInfos{
+  padding: 20rpx 0;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+}
+.clearFix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.otherBar{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.otherBar image{
+  border-radius: 15rpx;
+  width: 250rpx;
+  height: 150rpx;
+}
+.otherList{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.otherTitle{
+  color: #fa7196;
+  font-size: 27rpx;
+}
+.otherInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 15rpx;
+  box-sizing: border-box;
+}
+.otherWatch{
+  font-size: 24rpx;
+  color: #555;
+  
+}
+
